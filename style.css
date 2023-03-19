@@ -88,6 +88,7 @@ header ul li:hover {
   font-weight: bold;
   margin-top: 5px;
   transition: 0.5;
+  margin-bottom: 10px;
 }
 
 .head button:hover {
@@ -388,4 +389,15 @@ header ul li:hover {
 
 .contact-info a {
   margin-left: 10px;
+}
+
+
+@media (max-width: 380px) {
+  .head .dev-img {
+    display: none;
+  }
+  .head {
+    display: block;
+    text-align: center;
+  }
 }
