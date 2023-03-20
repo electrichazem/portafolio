@@ -31,6 +31,7 @@ header {
   width: 100%;
   z-index: 10000;
   position: fixed;
+  transition: 1s;
 }
 
 header ul {
@@ -61,6 +62,7 @@ header ul li:hover {
   justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 80px;
+  transition: 1s;
 }
 
 .head .content {
@@ -77,7 +79,7 @@ header ul li:hover {
   width: 50vw;
 }
 
-.head button {
+.head a {
   background-color: var(--second_color);
   color: white;
   width: 150px;
@@ -89,6 +91,11 @@ header ul li:hover {
   margin-top: 5px;
   transition: 0.5;
   margin-bottom: 10px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 
 .head button:hover {
@@ -131,6 +138,7 @@ header ul li:hover {
   padding: 5px 20px;
   text-align: center;
   color: var(--second_color);
+  transition: 1s;
 }
 
 .about-section img {
@@ -170,6 +178,7 @@ header ul li:hover {
   background-repeat: no-repeat;
   background-size: auto;
   padding-bottom: 20px;
+  transition: 1s;
 }
 
 .skills-section h1 {
@@ -278,6 +287,7 @@ header ul li:hover {
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 20px;
+  transition: 1s;
 }
 
 .services-h {
@@ -292,23 +302,26 @@ header ul li:hover {
 
 .services-section .service {
   width: 290px;
-  height: 390px;
+  height: auto;
   padding: 10px;
   border: 1px solid var(--second_color);
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin-left: 1%;
   margin-top: 5px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   transition: 0.3s all;
   position: relative;
+  text-align: center;
 }
 
 .services-section .service img {
   width: 120px;
-  margin: 0px 40px;
+}
+
+.services-section .img-con {
+  margin: 5px auto;
+  width: 150px;
+  height: auto;
 }
 
 .services-section .service:hover {
@@ -325,10 +338,10 @@ header ul li:hover {
 }
 
 .contact-section {
-    /* padding: 0px 40px 30px 40px; */
     width: 80%;
     margin: 0px auto;
     padding-bottom: 30px;
+    transition: 1s;
 }
 
 .contact-section h1 {
@@ -399,5 +412,11 @@ header ul li:hover {
   .head {
     display: block;
     text-align: center;
+  }
+  .head a {
+    margin: 5px auto;
+    width: 100px;
+    font-size: 16px;
+    height: 30px;
   }
 }

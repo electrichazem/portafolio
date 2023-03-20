@@ -11,15 +11,6 @@
     <header>
       <span class="title">Hazem</span>
       <ul>
-        <!-- <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#about-section">About</a>
-        </li>
-        <li>
-          <a href="#skills-section">Skills</a>
-        </li> -->
         <li>
           <a href="#contact-section">Contact</a>
         </li>
@@ -34,7 +25,7 @@
           <br />
           Web Developer
         </h1>
-        <button>Contact</button>
+        <a href="#contact-section">Contact</a>
       </div>
       <img src="./assets/header.jpg" alt="image" class="dev-img" />
     </section>
@@ -117,12 +108,14 @@
     </section>
 
     <div class="divider"></div>
-    
+
     <h1 class="services-h">My Services</h1>
     <section class="services-section">
-      
       <div class="service">
-        <img src="./assets/browsers.png" alt="image">
+        <div class="img-con">
+          <img src="./assets/browsers.png" alt="image" />
+        </div>
+
         <h3>Web Development</h3>
         <p>
           I design and build custom websites using the latest web technologies,
@@ -130,17 +123,27 @@
         </p>
       </div>
       <div class="service">
-        <img src="./assets/api.png" alt="image">
-        <h3>Database Design</h3>
+        <div class="img-con">
+          <img src="./assets/api.png" alt="image" />
+        </div>
+
+        <h3>API</h3>
         <p>
-            I develop secure and scalable APIs that connect your applications to data sources, enabling seamless communication and enhancing the user experience.
+          I develop secure and scalable APIs that connect your applications to
+          data sources, enabling seamless communication and enhancing the user
+          experience.
         </p>
       </div>
       <div class="service">
-        <img src="./assets/drone.png" alt="image">
+        <div class="img-con">
+          <img src="./assets/drone.png" alt="image" />
+        </div>
+
         <h3>IOT Projects</h3>
         <p>
-          I develop secure and reliable IoT projects that connect smart devices to cloud-based applications, enhancing connectivity and user experience.
+          I develop secure and reliable IoT projects that connect smart devices
+          to cloud-based applications, enhancing connectivity and user
+          experience.
         </p>
       </div>
     </section>
@@ -148,25 +151,24 @@
     <div class="divider"></div>
 
     <section class="contact-section" id="contact-section">
-        <h1>Contact Me</h1>
-        <form action="https://formspree.io/f/mdovlkeg" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-        <div class="contact-info">
-          <a href="mailto:hazememad.official@gmail.com">
-            <img src="./assets/gmail.png" alt="image" width="50px">
-          </a>
-          <a href="https://wa.me/+201289747600">
-            <img src="./assets/whatsapp.png" alt="image" width="50px">
-          </a>
-        </div>
-      </section>
-      
+      <h1>Contact Me</h1>
+      <form action="https://formspree.io/f/mdovlkeg" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <a href="mailto:hazememad.official@gmail.com">
+          <img src="./assets/gmail.png" alt="image" width="50px" />
+        </a>
+        <a href="https://wa.me/+201289747600">
+          <img src="./assets/whatsapp.png" alt="image" width="50px" />
+        </a>
+      </div>
+    </section>
   </body>
 </html>
